@@ -8,4 +8,4 @@ before_install:
   - docker build -t paolo1010/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true run paolo1010/docker-react npm run test
+  - docker run -e CI=true paolo1010/docker-react npm run test
